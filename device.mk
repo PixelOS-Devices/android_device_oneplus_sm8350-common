@@ -6,6 +6,10 @@
 # Inherit from the proprietary version
 $(call inherit-product, vendor/oneplus/dolby/dolby-vendor.mk)
 
+# DolbyManager
+PRODUCT_PACKAGES += \
+    OplusDolby
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
