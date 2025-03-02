@@ -10,6 +10,10 @@ $(call inherit-product, vendor/oneplus/dolby/dolby-vendor.mk)
 PRODUCT_PACKAGES += \
     OplusDolby
 
+# Overlay-RRO
+PRODUCT_PACKAGES += \
+    OplusDolbyResCommon
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
