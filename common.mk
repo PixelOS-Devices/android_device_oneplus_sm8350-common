@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
