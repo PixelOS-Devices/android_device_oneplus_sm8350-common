@@ -21,5 +21,11 @@
     "repository": "NoPrincessHere/proprietary_vendor_oplus_camera",
     "target_path": "vendor/oplus/camera",
     "remote": "gitlab"
+  },
+  {
+    "repository": "PixelOS-AOSP/android_hardware_dolby",
+    "target_path": "hardware/dolby",
+    "branch": "seventeen-hidl",
+    "remote": "gitlab"
   }
 ]
