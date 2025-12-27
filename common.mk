@@ -66,6 +66,7 @@ PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(AUDIO_HAL_DIR)/configs/lahaina/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(AUDIO_HAL_DIR)/configs/lahaina/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
     $(LOCAL_PATH)/configs/audio/bluetooth_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_hearing_aid_audio_policy_configuration.xml
@@ -361,11 +362,14 @@ PRODUCT_COPY_FILES += \
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    device/oneplus/dolby/configs/hidl/dolby_framework_matrix.xml \
     hardware/oplus/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/vintf/manifest.xml
-ODM_MANIFEST_FILES := $(LOCAL_PATH)/vintf/manifest_odm.xml
+ODM_MANIFEST_FILES += \
+    device/oneplus/sm8350-common/vintf/manifest_odm.xml \
+    device/oneplus/dolby/configs/hidl/c2_manifest.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
@@ -390,6 +394,9 @@ PRODUCT_PACKAGES += \
     firmware_wlanmdsp.otaupdate_symlink \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+# Inherit from the dolby makefile.
+$(call inherit-product-if-exists, device/oneplus/dolby/device.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
