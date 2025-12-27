@@ -1,11 +1,19 @@
 [
   {
+    "repository": "aosp-playground/android_device_oneplus_dolby",
+    "target_path": "device/oneplus/dolby"
+  },
+  {
     "repository": "PixelOS-AOSP/android_hardware_oplus",
     "target_path": "hardware/oplus"
   },
   {
     "repository": "PixelOS-Devices/android_kernel_oneplus_sm8350",
     "target_path": "kernel/oneplus/sm8350"
+  },
+  {
+    "repository": "aosp-playground/proprietary_vendor_oneplus_dolby",
+    "target_path": "vendor/oneplus/dolby"
   },
   {
     "remote": "gitlab",

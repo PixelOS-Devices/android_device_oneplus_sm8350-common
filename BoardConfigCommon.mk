@@ -194,5 +194,8 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Include the dolby BoardConfig.
+-include device/oneplus/dolby/BoardConfig.mk
+
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/sm8350-common/BoardConfigVendor.mk
