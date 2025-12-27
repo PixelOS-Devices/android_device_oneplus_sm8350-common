@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bd8a4e6_c600e011",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000008
+      },
+      "writtenOn": "2025-12-27T05:52:23Z",
+      "side": 1,
+      "message": "Needs to be updated to libtinyxml2_1-v34 and moved to QPR2",
+      "revId": "192ca741752a561d1bf5e4a800fcfb396557e1b1",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
