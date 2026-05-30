@@ -231,7 +231,6 @@ vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display (CWB)
 odm/etc/vintf/manifest/manifest_oplus_cwb.xml
-odm/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/libcwb_sm8350.so
 
 # Display (Features)
@@ -645,10 +644,6 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
-# Perf (Oplus)
-odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
-
 # Power-off alarm (system) - from LE2125 13.1.0.593(EX01)
 product/app/PowerOffAlarm/PowerOffAlarm.apk|5928b0a09b559a33f08ad2f04603a5c70fd3493b|6b8aa2a6b6feaa2da0f45be0a9a8147f46f10f50
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|1cef4c9f6193022d8410e21513f36687cab0e0f2
@@ -808,7 +803,6 @@ vendor/lib64/qcrilMarshal.so
 vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
-vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
