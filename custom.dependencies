@@ -21,10 +21,5 @@
     "repository": "NoPrincessHere/proprietary_vendor_oplus_camera",
     "target_path": "vendor/oplus/camera",
     "remote": "gitlab"
-  },
-  {
-    "repository": "NoPrincessHere/proprietary_vendor_oneplus_dolby",
-    "target_path": "vendor/oneplus/dolby",
-    "remote": "gitlab"
   }
 ]
